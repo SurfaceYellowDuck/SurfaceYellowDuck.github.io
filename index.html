@@ -68,13 +68,10 @@
   <section id="hero" class="d-flex flex-column justify-content-right">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Никита Луконенко</h1>
-      <p><span class="typed" data-typed-items="Программный инженер
-        , Веб разработчик, Путешественник, Спортсмен"></span></p>
+      <p><span class="typed" data-typed-items="RTL разработчик, Спортсмен"></span></p>
       <div class="social-links">
         <a href="https://t.me/shatun12" class="twitter"><i class="bx bxl-telegram"></i></a>
-        <a href="https://vk.com/shatungg" class="facebook"><i class="bx bxl-vk"></i></a>
-        <a href="https://t.me/shatun12" class="twitter"><i class="bx bxl-github"></i></a>
-
+        <a target="_blank" href="https://github.com/SurfaceYellowDuck" class="twitter"><i class="bx bxl-github"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -92,11 +89,11 @@
         <div class="row">
           <div class="col-lg-4">
             <figure>
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt=""height="50%">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt=""height="30%">
             </figure>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Программный инженер &amp; Веб разработчик</h3>
+            <h3>RTL разработчик</h3>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
@@ -107,7 +104,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Возраст:</strong> <span>19</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Возраст:</strong> <span>20</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Уровень образования:</strong> <span>Среднее общее образование</span></li>
                 </ul>
               </div>
@@ -124,8 +121,8 @@
 
         <div class="section-title">
           <h2>Факты обо мне</h2>
-          <p>Занимаюсь программированием три года, на данный момент обучаюсь в СПбГУ на втором курсе программной инженерии. С детства занимаюсь плаванием, имею второй взрослый разряд.
-             Люблю активный отдых и путешествия.</p>
+          <p>Студент третьего курса программной инженерии СПбГУ. Пишу на языке System Verilog. 
+            Закончил курс по верификации СнК от компании Yadro, учусь в Школе Синтеза. Ранее профессионально занимался плаванием, тренировался в школе олимпийского резерва г.Ессентуки</p>
         </div>
         <div class="row" style="display: flex; justify-content: center; align-items: center;">
           <div class="col-lg-3 col-md-6">
@@ -133,8 +130,8 @@
               <a href="https://github.com/SurfaceYellowDuck?tab=repositories" target="_blank">
               <i class="bi bi-github"></i>
               </a>
-              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
-              <p>репозитории</p>
+              <!-- <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span> -->
+              <!-- <p>репозитории</p> -->
             </div>
           </div>
 
@@ -143,10 +140,10 @@
           <h2>Проекты</h2>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
+  <!-- <div class="col"> -->
+    <!-- <div class="card h-100"> -->
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
+      <!-- <div class="card-body">
         <h5 class="card-title">Бинарные деревья</h5>
         <p class="card-text">На языке Kotlin было написано приложение с отрисовкой трёх видов бинарных деревьев: RBT, AVL, BST.
         Есть три варианта хранения деревьев: БД PostgreSQL, Neo4j, и текстовый файл.</p>
@@ -155,8 +152,20 @@
         <small class="text-muted"><a target="_blank" href="https://github.com/SurfaceYellowDuck/trees-3" class="btn btn-secondary">Узнайте больше на GitHub</a></small>
       </div>
     </div>
+  </div> -->
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h5 class="card-title">Порт SCR1 на плату Tang Primer 20K</h5>
+      <p class="card-text">На языке System Verilog для ядра SCR1 на FPGA Tang Primer 20K написал обертку, которая позволяет запустить ядро и общаться с ним через UART. Также добавил в проект 
+        AHB мост для нескольких устройств периферии ядра, и ROM память </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a target="_blank" href="https://github.com/SurfaceYellowDuck/fpga-sdk-prj"
+          class="btn btn-secondary">Узнайте больше на GitHub</a></small>
+    </div>
   </div>
-
+</div>
   <div class="col">
     <div class="card h-100">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
@@ -166,15 +175,27 @@
         скриптов.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a target="_blank" href="https://github.com/SurfaceYellowDuck/scr1" class="btn btn-secondary">Узнайте больше на GitHub</a>
+        <small class="text-muted"><a target="_blank" href="https://github.com/SurfaceYellowDuck/scr1/tree/tang20k_patch" class="btn btn-secondary">Узнайте больше на GitHub</a>
 </small>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
       <div class="card-body">
+        <h5 class="card-title">Модификация загрузчика SC-BL для SoC с SCR1 на Tang Primer 20K</h5>
+        <p class="card-text">Модифицировал Linker Script и код загрузчика для обеспечения совместимости с новой SoC с SCR1 на плате Tang Primer 20K</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><a target="_blank" href="https://github.com/SurfaceYellowDuck/sc-bl/tree/support_primer20k"
+            class="btn btn-secondary">Узнайте больше на GitHub</a></small>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="col">
+    <div class="card h-100"> -->
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <!-- <div class="card-body">
         <h5 class="card-title">Сайт-магазин</h5>
         <p class="card-text">Написан на Pyhon с использованием фреймворка Django. Реализована регистрация пользователя через
         социальные сети, Есть
@@ -185,7 +206,7 @@
           GitHub</a></small>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
           
             </div>
@@ -204,7 +225,7 @@
 
         <div class="section-title">
           <h2>Что я умею</h2>
-            <p>Tехнологии, с которыми приходилось работать: C, Python, Django DRF, Kotlin, Java, Make, PostgreSQL, MySQL, OCaml, Make</p>
+            <p>Tехнологии, с которыми приходилось работать: C, Python, System Verilog, Make</p>
         </div>
 
         <div class="row skills-content">
@@ -225,25 +246,23 @@
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill">Django DRF <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Django DRF <i class="val">20%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
           </div>
 
           <div class="col-lg-6">
+<div class="progress">
+  <span class="skill">System Verilog <i class="val">60%</i></span>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
 
-            <div class="progress">
+<div class="progress">
+  <span class="skill">Make <i class="val">40%</i></span>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+            <!-- <div class="progress">
               <span class="skill">Kotlin <i class="val">40%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
@@ -269,7 +288,7 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div>
+            </div> -->
 
           </div>
 
@@ -322,8 +341,7 @@
       <h3>Никита Луконенко</h3>
       <div class="social-links">
         <a target="_blank" href="https://t.me/shatun12" class="twitter"><i class="bx bxl-telegram"></i></a>
-        <a target="_blank" href="https://vk.com/shatungg" class="facebook"><i class="bx bxl-vk"></i></a>
-        <a target="_blank" href="https://t.me/shatun12" class="twitter"><i class="bx bxl-github"></i></a>
+        <a target="_blank" href="https://github.com/SurfaceYellowDuck" class="twitter"><i class="bx bxl-github"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Никита Луконенко</span></strong>. Все права защищены.
